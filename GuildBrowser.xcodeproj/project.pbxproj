@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6687060C16E671B4003F191B /* CharacterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6687060B16E671B4003F191B /* CharacterTests.m */; };
+		6687061016E673AC003F191B /* character.json in Resources */ = {isa = PBXBuildFile; fileRef = 6687060E16E673AC003F191B /* character.json */; };
+		6687061116E673AC003F191B /* guild.json in Resources */ = {isa = PBXBuildFile; fileRef = 6687060F16E673AC003F191B /* guild.json */; };
 		6691277916E6550400B2FDD8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC5D15E9872E00B3713E /* SenTestingKit.framework */; };
 		6691277A16E6550400B2FDD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC3F15E9872D00B3713E /* UIKit.framework */; };
 		6691277B16E6550400B2FDD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC4115E9872D00B3713E /* Foundation.framework */; };
@@ -88,6 +91,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6687060A16E671B4003F191B /* CharacterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterTests.h; sourceTree = "<group>"; };
+		6687060B16E671B4003F191B /* CharacterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTests.m; sourceTree = "<group>"; };
+		6687060E16E673AC003F191B /* character.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = character.json; sourceTree = "<group>"; };
+		6687060F16E673AC003F191B /* guild.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guild.json; sourceTree = "<group>"; };
 		6691277816E6550400B2FDD8 /* GuildBrowserLogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuildBrowserLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6691277E16E6550400B2FDD8 /* GuildBrowserLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GuildBrowserLogicTests-Info.plist"; sourceTree = "<group>"; };
 		6691278016E6550400B2FDD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -208,9 +215,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6687060D16E673AC003F191B /* testdata */ = {
+			isa = PBXGroup;
+			children = (
+				6687060E16E673AC003F191B /* character.json */,
+				6687060F16E673AC003F191B /* guild.json */,
+			);
+			path = testdata;
+			sourceTree = "<group>";
+		};
 		6691277C16E6550400B2FDD8 /* GuildBrowserLogicTests */ = {
 			isa = PBXGroup;
 			children = (
+				6687060A16E671B4003F191B /* CharacterTests.h */,
+				6687060B16E671B4003F191B /* CharacterTests.m */,
 				6691278916E656CC00B2FDD8 /* WowUtilsTests.h */,
 				6691278A16E656CC00B2FDD8 /* WowUtilsTests.m */,
 				6691277D16E6550400B2FDD8 /* Supporting Files */,
@@ -231,6 +249,7 @@
 		CB9FDC3015E9872D00B3713E = {
 			isa = PBXGroup;
 			children = (
+				6687060D16E673AC003F191B /* testdata */,
 				CB9FDCEC15E9B31400B3713E /* images */,
 				CB9FDCC115E9A8DA00B3713E /* AFNetworking */,
 				CB9FDC4515E9872D00B3713E /* GuildBrowser */,
@@ -502,6 +521,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6691278116E6550400B2FDD8 /* InfoPlist.strings in Resources */,
+				6687061016E673AC003F191B /* character.json in Resources */,
+				6687061116E673AC003F191B /* guild.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +604,7 @@
 				6691278E16E6598A00B2FDD8 /* Item.m in Sources */,
 				6691278F16E6598A00B2FDD8 /* WoWUtils.m in Sources */,
 				6691278B16E656CC00B2FDD8 /* WowUtilsTests.m in Sources */,
+				6687060C16E671B4003F191B /* CharacterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,6 +852,7 @@
 				6691278816E6550400B2FDD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB9FDC3515E9872D00B3713E /* Build configuration list for PBXProject "GuildBrowser" */ = {
 			isa = XCConfigurationList;
