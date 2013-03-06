@@ -43,19 +43,15 @@
 
 -(void)tearDown
 {
-    // 6
     _characterDetailJson = nil;
     _testGuy = nil;
 }
 
-// 1
 - (void)testCreateCharacterFromDetailJson
 {
-    // 2
     Character *testGuy1 = [[Character alloc] initWithCharacterDetailData:_characterDetailJson];
     STAssertNotNil(testGuy1, @"Could not create character from detail json");
     
-    // 3
     Character *testGuy2 = [[Character alloc] initWithCharacterDetailData:nil];
     STAssertNotNil(testGuy2, @"Could not create character from nil data");
 }
