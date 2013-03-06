@@ -70,7 +70,7 @@
     STAssertEqualObjects(_testGuy.achievementPoints, @3130, @"achievement points is wrong");
     STAssertEqualObjects(_testGuy.level,@85, @"level is wrong");
     
-    STAssertEqualObjects(_testGuy.classType, @"Warr", @"class type is wrong");
+    STAssertEqualObjects(_testGuy.classType, @"Warrior", @"class type is wrong");
     STAssertEqualObjects(_testGuy.race, @"Human", @"race is wrong");
     STAssertEqualObjects(_testGuy.gender, @"Male", @"gener is wrong");
     STAssertEqualObjects(_testGuy.averageItemLevel, @379, @"avg item level is wrong");
